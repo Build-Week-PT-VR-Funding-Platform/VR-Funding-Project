@@ -1,0 +1,39 @@
+// Home
+.container {
+    section {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        align-items: center;
+        padding-top: 40px;
+        div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h1 {
+                font-family: "Arial Black", Gadget, sans-serif;
+                font-size: 3rem;
+                line-height: 4rem;
+            }
+            button {
+                border-radius: 5px;
+                border: 1px solid black;
+                background: white;
+                padding: 5px 20px;
+                margin-top: 15px;
+                &:hover {
+                    background: lightgray;
+                }
+            }
+        }
+        .section-one-img {
+            width: 350px;
+            height: 250px;
+            margin-left: 40px;
+            @media (max-width: 800px) {
+                display: none;
+            }
+        }
+    }
+}
+

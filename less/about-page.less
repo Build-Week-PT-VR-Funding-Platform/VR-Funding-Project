@@ -1,0 +1,49 @@
+.container {
+    .img {
+        display: flex;
+        justify-content: space-between;
+        h1 {
+            text-align: center;
+            padding: 200px 100px;
+            font-size: 40px;
+        }
+        .aside-img {
+            width: 400px;
+            height: 100vh;
+            padding-bottom: 20px;
+            @media (max-width: 800px) {
+                display: none;
+            }
+        }
+    }
+    .githubs {
+        display: flex;
+        flex-direction: column;
+        #one, #two, #three, #four, #five, #six {
+            display: flex;
+            flex-direction: row;
+            padding: 10px 0;
+            a {
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+        #two {
+            margin-right: 145px;
+        }
+        #three {
+            margin-right: 100px;
+        }
+        #four {
+            margin-right: 70px;
+        }
+        #five {
+            margin-right: 43px;
+        }
+        #six {
+            margin-right: 63px;
+        }
+    }
+}
