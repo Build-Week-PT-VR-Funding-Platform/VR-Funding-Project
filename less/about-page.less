@@ -1,6 +1,6 @@
 .container {
     .img {
-        display: flex;
+        .flex();
         justify-content: space-between;
         h1 {
             text-align: center;
@@ -11,16 +11,16 @@
             width: 400px;
             height: 100vh;
             padding-bottom: 20px;
-            @media (max-width: 800px) {
+            @media @phone {
                 display: none;
             }
         }
     }
     .githubs {
-        display: flex;
+        .flex();
         flex-direction: column;
         #one, #two, #three, #four, #five, #six {
-            display: flex;
+            .flex();
             flex-direction: row;
             padding: 10px 0;
             a {

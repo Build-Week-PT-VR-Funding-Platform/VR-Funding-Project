@@ -1,16 +1,16 @@
 // Home
 .container {
     nav {
-        display: flex;
+        .flex();
         justify-content: space-around;
         padding-top: 10px;
         position: sticky;
-        @media (max-width: 800px) {
+        @media @phone {
             flex-direction: column;
             align-items: center;
         }
         a {
-            color: black;
+            color: @colorblack;
             padding-bottom: 20px;
         }
     }
